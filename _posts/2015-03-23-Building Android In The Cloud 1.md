@@ -22,8 +22,8 @@ My set-up:
 * Jenkins
 
 
-#### Step 1 - Managing the Dependencies with Maven
-I opted to use Maven to manage the dependencies of the project, solely because I have more experience with it that I do with Gradle.  Migrating to Gradle is a challenge for another day.
+## Managing the Dependencies with Maven
+I opted to use Maven to manage the dependencies of the project, solely because I have more experience with it than I do with Gradle.  Migrating to Gradle is a challenge for another day.
 
 The first thing to do is create a new Maven project.  Rather than having to set up all the Android folder structures by hand, there is an excellent set of Maven archetypes [available on GitHub](https://github.com/akquinet/android-archetypes).
 
@@ -70,7 +70,7 @@ Downloading: https://repo.maven.apache.org/maven2/com/google/android/android/4.4
 [ERROR] 
 ```
 
-#### Problem 1 - No Android Dependencies in Maven Central
+## Problem: No Android Dependencies in Maven Central
 Well, that's not strictly true.  There are *some* dependencies in Maven Central, however there's nothing beyond API 16.  Google do not release the Android JARs into Maven Central, ones that are there have been done by others.  
 The solution to this particular problem is to install the Android JAR from my local SDK installation into the local Maven repository. So from my shell, I can run the following:
 
