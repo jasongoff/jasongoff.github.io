@@ -18,6 +18,9 @@ Firstly, I need to install the plugins that Jenkins needs.  In the Manage Jenkin
 
 #### Set up the Jenkins Environment
 From the Manage Jenkins screen, I select Configure System and set the Android SDK path.  I set this to the location on my development machine where I keep the SDK. I also check the box so that Jenkins will use the SDK tools to download additional Android components if required.  
+
+![Jenkins Build Output]({{ site.baseurl }}/images/jenkins-android-sdk.png)
+
 In this example that is unlikely to occur as I have already built the project using IntelliJ pointing to the same SDK path.  This will have more of a bearing when setting up Jenkins on a dedicated build server.
 
 #### Create a Maven Build Project
