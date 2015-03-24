@@ -32,16 +32,11 @@ Having completed the form I clicked on **Create** and the VM build was underway.
 ![Server Detail]({{site.baseurl}}/images/bitnami-server-detail.png)
 
 ##Configuring Jenkins
-Following the Application links from the Bitnami portal, I logged on to the new Jenkins instance.  The first thing to do is to install the Android Emulator plugin (see my [previous post]({% post_url 2015-03-23-Building Android In The Cloud 2 %}) for details).  Once the plugin was installed, I went to the *Manage Jenkins - Configure System* screen and set the following properties
+Following the Application links from the Bitnami portal, I logged on to the new Jenkins instance.  The first thing to do is to install the Android Emulator plugin (see my [previous post]({% post_url 2015-03-23-Building Android In The Cloud 2 %}) for details).  Once the plugin was installed, I went to the *Manage Jenkins - Configure System* screen and set the following properties:
 
-
-Property | Value
-:-------- | :-----
-Android SDK Root | *leave empty*
-Automatically Install Android Components | *checked*
-Maven Installations | *click __Add Maven__*. Name *Maven*
-System Admin email address | *set to my email address*
-
+Leave the **Android SDK Root** empty.  
+Make sure **Automatically Install Android Components** is checked.  
+Under **Maven Installations** click *Add Maven* and set the name to *Maven*.  
 
 ##Creating a Build Project
 Exactly as [I did on the local Jenkins install](({% post_url 2015-03-23-Building Android In The Cloud 2 %})), I created a Maven Project build on the new VM Jenkins instance.  
